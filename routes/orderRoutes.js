@@ -23,7 +23,7 @@ router.post('/', async (req, res) => {
 
     console.log('Received order:', req.body); // Debug log
 
-    // Validate empty payload
+    //   Validate empty payload
     if (!req.body || Object.keys(req.body).length === 0) {
       return res.status(400).json({ error: 'Invalid request. No data provided.' });
     }
