@@ -28,7 +28,7 @@ app.use((req, res, next) => {
 app.use('/lessons', lessonRoutes);
 app.use('/orders', orderRoutes);
 
-// Start server and connect to MongoDB
+//   Start server and connect to MongoDB
 connectToDB().then(() => {
     app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
 });
