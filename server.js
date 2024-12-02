@@ -8,7 +8,7 @@ const orderRoutes = require('./routes/orderRoutes');
 const app = express();
 const PORT = 3000;
 
-//  Middleware
+// Middleware
 app.use(cors({ origin: 'http://localhost:5173' })); // Restrict CORS to the frontend's origin
 app.use(express.json()); // Parses incoming JSON requests
 
