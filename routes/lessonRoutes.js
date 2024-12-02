@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { getDB } = require('../conf/db');
 
-// GET all lessons
+//  GET all lessons
 router.get('/', async (req, res) => {
     try {
         const db = getDB();
