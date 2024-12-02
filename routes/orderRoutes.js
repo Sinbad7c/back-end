@@ -7,7 +7,7 @@ router.post('/', async (req, res) => {
   try {
     const db = getDB();
 
-    // Extract input fields
+    //  Extract input fields
     const {
       firstName,
       lastName,
