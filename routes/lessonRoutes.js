@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// GET: Search lessons
+//  GET: Search lessons
 router.get('/search', async (req, res) => {
     try {
         const query = req.query.query || '';
