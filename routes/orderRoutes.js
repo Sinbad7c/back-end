@@ -40,7 +40,7 @@ router.post('/', async (req, res) => {
       errors.push('Last name must contain only alphabetical characters');
     }
 
-    // Validate Address Fields
+    //  Validate Address Fields
     if (!address) errors.push('Address is required');
     if (!city) errors.push('City is required');
     if (!state) errors.push('State is required');
